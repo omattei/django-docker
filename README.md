@@ -1,4 +1,5 @@
 # django-docker
-Dockerfile for extension of Graham Dumpleton's mod_wsgi-docker project
+A Dockerfile extending [thomaspinckney3/django-docker](https://github.com/thomaspinckney3/django-docker) to include Django REST Framework libraries.
 
-Docker image on Docker Hub at https://hub.docker.com/r/tp33/django/
+Docker image on Docker Hub at https://hub.docker.com/r/omattei/restful-django
+

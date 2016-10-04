@@ -6,11 +6,14 @@ RUN apt-get update && \
 	    unattended-upgrades && \
             rm -r /var/lib/apt/lists/*
 
-RUN pip install --upgrade pip \ 
-	&& pip install "django<1.9" \ 
+RUN pip install --upgrade pip \
+	&& pip install "django<1.9" \
 	&& pip install --allow-external mysql-connector-python "mysql-connector-python-rf<2.2" \
 	&& pip install "kafka-python<=1.0" \
 	&& pip install "elasticsearch<3.0" \
+	&& pip install "djangorestframework" \
+	&& pip install "markdown" \
+	&& pip install "django-filter" \
 	&& pip install "Pillow<3.1"
 
 ENV LANG=en_US.UTF-8 PYTHONHASHSEED=random \
