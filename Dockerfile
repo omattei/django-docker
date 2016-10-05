@@ -13,6 +13,7 @@ RUN pip install --upgrade pip \
 	&& pip install "elasticsearch<3.0" \
 	&& pip install "djangorestframework" \
 	&& pip install "markdown" \
+	&& pip install "requests" \
 	&& pip install "django-filter" \
 	&& pip install "Pillow<3.1"
 
